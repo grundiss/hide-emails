@@ -1,0 +1,23 @@
+{
+    "name": "hide-emails",
+    "version": "1.0.3",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["any-site.js"]
+        },
+        {
+            "matches": ["http://*.hh.ru/*", "https://*.hh.ru/*"],
+            "js": ["hh.js"]
+        },
+        {
+            "matches": ["http://web.whatsapp.com//*", "https://web.whatsapp.com/*"],
+            "js": ["whatsapp.js"]
+        },
+        {
+            "matches": ["http://*.talantix.ru//*", "https://*.talantix.ru/*"],
+            "js": ["talantix.js"]
+        }
+    ]
+}
