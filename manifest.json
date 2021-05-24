@@ -18,6 +18,10 @@
         {
             "matches": ["http://*.talantix.ru//*", "https://*.talantix.ru/*"],
             "js": ["talantix.js"]
+        },
+        {
+            "matches": ["http://*.squadrille.com/*", "https://*.squadrille.com/*"],
+            "js": ["squadrille.js"]
         }
     ]
 }

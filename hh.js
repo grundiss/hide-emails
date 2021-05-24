@@ -59,6 +59,10 @@
         document.documentElement,
         {childList: true, subtree: true},
     );
-    
-    searchAndReplace();
+
+    document.addEventListener("readystatechange", function() {
+        console.log("plugin: readystatechange", document.readyState);
+
+        searchAndReplace();
+    })
 })();
